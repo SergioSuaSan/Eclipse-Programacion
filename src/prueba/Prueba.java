@@ -7,6 +7,7 @@ public class Prueba {
 
 		int ganasdevivir = 0;
 		System.out.println(ganasdevivir);
+		System.out.println(ganasdevivir + "son las ganas de vivir");
 		
 		
 		
