@@ -1,4 +1,4 @@
-package pruebas;
+package claseStrings;
 
 public class PruebaObjetos {
 
