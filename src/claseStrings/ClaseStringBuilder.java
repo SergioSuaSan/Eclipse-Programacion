@@ -55,10 +55,10 @@ public class ClaseStringBuilder {
 		
 		//Convertir una variable en otra :3
 		
-		//De String a StringBuilder
+		//De String a StringBuilder ^^
 		sb1= new StringBuilder(s1);
 		
-		//De SB a String
+		//De SB a String >:3
 		s1=sb1.toString();
 		
 	}
