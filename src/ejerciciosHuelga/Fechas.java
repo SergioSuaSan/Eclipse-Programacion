@@ -1,4 +1,4 @@
-package Ejercicios;
+package ejerciciosHuelga;
 
 import java.util.Scanner;
 
