@@ -25,9 +25,11 @@ public class Ej4 {
 		
 		StringBuilder fr= new StringBuilder(frase);
 		for (int i = 0; i < rotaciones; i++) {
-			//Saco una letra
+			//Saco la última letra letra
 			letra =fr.charAt(fr.length()-1);
+			//Elimino la última letra
 			fr.deleteCharAt(fr.length()-1);
+			//Inserto la última letra en la primera posicion
 			fr.insert(0, letra);	
 		}	
 		System.out.println(fr);
