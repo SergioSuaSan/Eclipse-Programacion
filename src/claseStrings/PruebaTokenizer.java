@@ -1,4 +1,4 @@
-package prueba;
+package claseStrings;
 
 //Importado automáticamente
 import java.util.StringTokenizer;
