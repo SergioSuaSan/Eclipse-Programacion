@@ -15,6 +15,7 @@ public class pruebaexaneb {
 		frase = teclado.nextLine();
 		System.out.println("Escribe una palabra");
 		palabra = teclado.nextLine();
+		teclado.close();
 		
 		
 		StringTokenizer st = new StringTokenizer(frase, " , . ; : ", true);
@@ -32,6 +33,7 @@ public class pruebaexaneb {
 			} else {
 				System.out.print(".");
 			}
+		
 		
 		
 		}
