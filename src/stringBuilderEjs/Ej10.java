@@ -38,9 +38,11 @@ public class Ej10 {
 			} else {
 				for (int i = 0; i < palabra.length(); i++) {
 					position = palabra.indexOf(letra);
-					System.out.println(position);
+					String algo = palabra.substring(position, position+1);
+					System.out.println(position + algo);
 					position = palabra.indexOf(palabra, position +1);
-					
+					sb.replace(position, position+1, algo);
+					System.out.println(sb);
 				}
 		
 			}
