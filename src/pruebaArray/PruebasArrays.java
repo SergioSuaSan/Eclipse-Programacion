@@ -43,7 +43,7 @@ public class PruebasArrays {
 		//diferentes tipos de arrays
 		double[] l;
 		boolean[] m;
-		String[] n;
+		String[] n; 
 		Object [] o;
 		int [][] p; //Array en dos dimensiones
 		

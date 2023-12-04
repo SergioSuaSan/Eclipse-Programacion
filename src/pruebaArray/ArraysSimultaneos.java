@@ -20,18 +20,20 @@ public class ArraysSimultaneos {
 		
 		for (int i = 0; i < notas.length; i++) {
 			if (notas[i] >=5) {
-				System.out.println(modulos[i]);
+				System.out.println("\t" +modulos[i]);
 			}
 		}
 		
 		System.out.println();
 		System.out.println("Módulos favoritos:");
 		//Módulo favorito
+		int posicionnotamayor = 0;
 		for (int i = 0; i < notas.length; i++) {
-			if (notas[i] ==10) {
-				System.out.println(modulos[i]);
+			if (notas[i] >=notas[posicionnotamayor]) {
+			posicionnotamayor = i;
 			}
 		}
+		System.out.println("\t" + modulos[posicionnotamayor]);
 		
 		System.out.println();
 		
@@ -40,10 +42,16 @@ public class ArraysSimultaneos {
 		for (int i = 0; i < notas.length; i++) {
 			acumulador += notas[i];
 		}
-		int media = acumulador/notas.length;
+		double media = (double)acumulador/notas.length;
+		System.out.println("Media: " + media);
+		System.out.println("Módulos por encima de la media");
+		for (int i = 0; i < notas.length; i++) {
+			if (notas[i]> media) {
+				System.out.println("\t" + modulos[i]);
+			}
+		}
 		
 		
-		System.out.println(media);
 		
 		
 		
