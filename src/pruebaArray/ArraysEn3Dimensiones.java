@@ -1,6 +1,7 @@
 package pruebaArray;
 
-import java.sql.Array;
+
+import java.util.Arrays;
 import java.util.Iterator;
 
 public class ArraysEn3Dimensiones {
@@ -99,18 +100,19 @@ public class ArraysEn3Dimensiones {
 		
 		
 		//Clase con más diferencia entre mujeres y hombres
-		int acumulador = 0;
-		int[] mayor = datos [0][0];
+		int acumulador = 0, iMasDiferencia = 0, jMasDiferencia = 0;
 		for (int i = 0; i < datos.length; i++) {
 			for (int j = 0; j < datos[i].length; j++) {
-				for (int j2 = 0; j2 < datos[i][j].length; j2++) {
-					int diferencia = Math.abs(datos[i][j][0]-datos[i][j][1]);
-					if (diferencia >acumulador) {
-						mayor = datos [i][j];
-					}
+				int diferencia = Math.abs(datos[i][j][0]-datos[i][j][1]);
+				if (diferencia >acumulador) {
+					iMasDiferencia = i;
+					jMasDiferencia =j;
+					acumulador = diferencia;
 				}
 			}
 		}
+
+		System.out.println("El grupo con mayor diferencia es del módulo de " +  grados[iMasDiferencia] + " en el curso " + cursos[jMasDiferencia] );
 		
 		
 	}
