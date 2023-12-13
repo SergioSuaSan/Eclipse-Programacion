@@ -1,9 +1,9 @@
-package EjerciciosArrays;
+package ejerciciosArrays;
 
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class ejercicio2 {
+public class Ejercicio2 {
 
 	public static void main(String[] args) {
 		/*
