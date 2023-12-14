@@ -15,8 +15,7 @@ almacenándolas en dos array de 3 elementos.
 		int[][] array =  {	{1, 2, 3},
 									{1, 4, 3},
 									{1, 2, 3}	};
-		int[]filas = new int [3];
-		int[]columnas = new int [3];
+		int[]filas = new int [3], columnas = new int [3];
 		
 		for (int i = 0; i < array.length; i++) {
 			int acumulador = 0;
