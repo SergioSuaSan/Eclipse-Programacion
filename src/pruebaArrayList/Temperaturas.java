@@ -2,6 +2,7 @@ package pruebaArrayList;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Iterator;
 
 public class Temperaturas {
 
@@ -22,7 +23,7 @@ public class Temperaturas {
 		System.out.println("La media es: " + (double) (acumulador/temperaturas.size() ) );
 
 		//qué dia fue el más caluroso
-		double mayor = 0;
+		double mayor = Double.MIN_VALUE;
 		
 		for (Double double1 : temperaturas) {
 			if (double1>mayor) {
@@ -30,6 +31,16 @@ public class Temperaturas {
 			}
 		}
 		System.out.println("La temperatura mayor es: " + mayor);
+		int diamaximo = 0;
+		for (int i = 0; i < temperaturas.size(); i++) {
+			if (mayor==temperaturas.get(i)) {
+				diamaximo = i;
+			}
+		}
+		ArrayList<String> dias = new ArrayList<String>(Arrays.asList("Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo"));
+		System.out.println("el día más caluroso es el " + dias.get(diamaximo));
+		
+		
 
 	
 	
