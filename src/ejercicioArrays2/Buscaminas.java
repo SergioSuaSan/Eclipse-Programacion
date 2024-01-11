@@ -21,15 +21,30 @@ numero que indica cuantas minas hay alrededor.
 		int bombas = 10;
 		for (int i = 0; i < campo.length; i++) {
 			for (int j = 0; j < campo[i].length; j++) {
-				campo[i][j] = (int) Math.random()+1;
 			}
 			System.out.println(Arrays.toString(campo[i]));
 		}
 		
 		
+		while (bombas>0) {
+			int x =(int)(Math.random()*5);
+			int y =(int)(Math.random()*5);
+			if (campo[x][y] ==1) {
+				continue;
+			} else {
+				bombas --;
+				campo[x][y] =1;	
+			}
+		}
 		
+		System.out.println();		
 		
-		
+		for (int i = 0; i < campo.length; i++) {
+			for (int j = 0; j < campo[i].length; j++) {
+			}
+			System.out.println(Arrays.toString(campo[i]));
+		}
+	
 	}
 
 }
